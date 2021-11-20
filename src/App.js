@@ -3,6 +3,7 @@ import './App.css';
 
 class App extends Component {
 	handleOnClick = () => {
+		// console.log(this.props.store.getState().clicks)
 		this.props.store.dispatch({
 		  type: 'INCREASE_COUNT',
 		});
